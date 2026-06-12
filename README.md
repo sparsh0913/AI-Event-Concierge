@@ -1,4 +1,5 @@
 # AI Event Concierge Platform
+Live Demo: https://ai-event-concierge-one.vercel.app
 
 A full-stack web application designed to help teams plan corporate offsites. The platform takes a natural language description of an offsite event, processes it through Google's Gemini API, generates a structured venue proposal, and persists the history in MongoDB.
 
@@ -47,7 +48,7 @@ A full-stack web application designed to help teams plan corporate offsites. The
 3. **Configure Environment Variables**:
    Create a `.env.local` file in the root directory:
    ```bash
-   cp .env.local.example .env.local
+   cp .env.local
    ```
    Open `.env.local` and fill in your MongoDB connection string and Gemini API Key:
    ```env
@@ -85,7 +86,7 @@ ai-event-concierge/
 │   │   └── db.ts                # cached MongoDB connection helper
 │   └── models/
 │       └── SearchRequest.ts     # Mongoose schema for SearchRequest logs
-├── .env.local.example           # Example environment file
+├
 ├── tsconfig.json                # TypeScript configurations
 └── package.json                 # Node dependencies & run scripts
 ```
